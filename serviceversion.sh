@@ -15,7 +15,7 @@ memcached_version='memcached -V'
 export MEMCACHED_VERSION=$(eval "$cassandra_version")
 echo MEMCACHED_VERSION=$MEMCACHED_VERSION
 
-if [[ "$MEMCACHED_VERSION" == "memcached 1.4.39" ]]; then
+if [[ "$MEMCACHED_VERSION" == "memcached 1.5.2" ]]; then
   echo "Memcache version is running with latest version i.e, $MEMCACHED_VERSION"
 else
   echo "ERROR: Failed, Memcache version dint match to the latest version instead it is $MEMCACHED_VERSION"
@@ -26,7 +26,7 @@ postgres_version='psql --version'
 export POSTGRES_VERSION=$(eval "$postgres_version")
 echo POSTGRES_VERSION=$POSTGRES_VERSION
 
-if [[ "$POSTGRES_VERSION" == "psql (PostgreSQL) 9.6.3" ]]; then
+if [[ "$POSTGRES_VERSION" == "psql (PostgreSQL) 9.6.5" ]]; then
   echo "Postgres version is running with latest version i.e, $POSTGRES_VERSION"
 else
   echo "ERROR: Failed, Postgres version dint match to the latest version instead it is $POSTGRES_VERSION"
@@ -37,7 +37,7 @@ redis_version='redis-server -v'
 export REDIS_VERSION=$(eval "$redis_version")
 echo REDIS_VERSION=$REDIS_VERSION
 
-if [[ "$REDIS_VERSION" == "Redis server v=3.2.9 sha=00000000:0 malloc=jemalloc-4.0.3 bits=64 build=86450d2ba8219c1e" ]]; then
+if [[ "$REDIS_VERSION" == "Redis server v=4.0.2 sha=00000000:0 malloc=jemalloc-4.0.3 bits=64 build=86450d2ba8219c1e" ]]; then
   echo "Redis version is running with latest version i.e, $REDIS_VERSION"
 else
   echo "ERROR: Failed, Redis version dint match to the latest version instead it is $REDIS_VERSION"
